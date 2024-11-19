@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000; /* Preto */
+    color: #ff0000; /* Vermelho */
+    padding:  10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ff0000; /* Vermelho */
+    text-decoration: none;
+}
+
+.info-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.planos-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.plano {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.plano:hover {
+    transform: scale(1.05);
+}
+
+.plano.destaque {
+    border: 2px solid #ff0000; /* Vermelho */
+}
+
+.preco {
+    font-size: 1.5em;
+    color: #ff0000; /* Vermelho */
+}
+
+.depoimentos {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #000; /* Preto */
+    color: #ff0000; /* Vermelho */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media a {
+    color: #ff0000; /* Vermelho */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff0000; /* Vermelho */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #cc0000; /* Vermelho mais escuro */
+}

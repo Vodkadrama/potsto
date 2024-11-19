@@ -1,0 +1,91 @@
+[18:07, 11/19/2024] Leonardo: Html
+[18:07, 11/19/2024] Leonardo: <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Assinatura de Conteúdo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Conteúdo Exclusivo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre" class="info-section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Oferecemos conteúdo exclusivo para nossos assinantes, incluindo artigos, vídeos e muito mais. Junte-se a nós e tenha acesso a um mundo de conhecimento!</p>
+        </div>
+    </section>
+
+    <section id="planos" class="planos-section">
+        <div class="container">
+            <h2>Planos de Assinatura</h2>
+            <div class="plano">
+                <h3>Plano Básico</h3>
+                <p>Acesso a conteúdo básico</p>
+                <p class="preco">R$ 19,90/mês</p>
+                <button onclick="assinar('Básico')">Assinar</button>
+            </div>
+            <div class="plano destaque">
+                <h3>Plano Premium</h3>
+                <p>Acesso a todo o conteúdo</p>
+                <p class="preco">R$ 39,90/mês</p>
+                <button onclick="assinar('Premium')">Assinar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="info-section">
+        <div class="container">
+            <h2>O que nossos assinantes dizem</h2>
+            <div class="depoimento">
+                <p>"O conteúdo é incrível! Aprendi muito com os artigos e vídeos disponíveis." - <strong>Maria</strong></p>
+            </div>
+            <div class="depoimento">
+                <p>"Vale cada centavo! Acesso a informações que não encontro em nenhum outro lugar." - <strong>João</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="info-section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contatoForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Site de Assinatura de Conteúdo. Todos os direitos reservados.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
